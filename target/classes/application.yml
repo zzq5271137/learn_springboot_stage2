@@ -1,0 +1,33 @@
+jdbc:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/testdb?characterEncoding=utf-8
+  username: root
+  password: ZZQ930603
+  arrayPros: 1,2,3,4 # array
+  listPros: # list
+    - listvalue1
+    - listvalue2
+    - listvalue3
+  mapPros: # map
+    mapkey1: mapvalue1
+    mapkey2: mapvalue2
+    mapkey3: mapvalue3
+  listMapPros: # list<map>
+    - map1key1: map1value1
+      map1key2: map1value2
+    - map2key1: map2value1
+      map2key2: map2value2
+      map2key3: map2value3
+  user: # 对象
+    name: zzqgo
+    age: 100
+    scores: 82,75,86
+    skills:
+      - java
+      - python
+      - javascript
+
+spring:
+  mvc:
+    servlet:
+      load-on-startup: 1
